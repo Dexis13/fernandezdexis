@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Webpage</title>
+    <title>CheckWeather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="android-weather-icons-png-12.png" type="image/x-icon">
 </head>
 <body>
-        <h1>Welcome to My Website</h1>
+    <div class="container">
+        <div class="header">
+            <img src="android-weather-icons-png-12.png" alt="Logo" class="logo"> 
+            <h1>CheckWeather</h1>
+        </div>
+        <form id="weather-form">
+            <input type="text" id="location" placeholder="Enter a location" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <div id="weather-result">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
